@@ -1,6 +1,6 @@
 import Button from 'react-bootstrap/Button'
 import { CartContext } from '../CardContext'
-import { useState, useContext } from 'react'
+import { useContext } from 'react'
 import { getProductData } from '../products'
 
 
