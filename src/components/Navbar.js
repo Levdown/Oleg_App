@@ -1,9 +1,9 @@
-import {Button, Navbar, Modal, Container, Nav} from 'react-bootstrap'
+import {Button, Navbar, Modal} from 'react-bootstrap'
 import { useState } from 'react';
 import { CartContext } from '../CardContext';
 import { useContext } from 'react';
 import CartProduct from './CartProduct';
-import { MainButton, useShowPopup } from '@vkruglikov/react-telegram-web-app';
+import { MainButton } from '@vkruglikov/react-telegram-web-app';
 
 function NavbarComponent () {
 

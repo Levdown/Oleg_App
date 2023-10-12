@@ -1,8 +1,6 @@
-import {Card, Button, Row, Col, FormLabel, Form, Modal} from 'react-bootstrap'
+import {Card, Button, Col, FormLabel, Form, Modal} from 'react-bootstrap'
 import { CartContext } from '../CardContext';
-import { useContext, useState } from 'react';
-import { MainButton, useShowPopup } from '@vkruglikov/react-telegram-web-app';
-import CartProduct from './CartProduct';
+import { useContext } from 'react';
 import "../App.css"
 
 

@@ -1,11 +1,11 @@
-import {Button, Navbar, Modal, Container, Nav} from 'react-bootstrap'
+import {Modal} from 'react-bootstrap'
 import { useState } from 'react';
 import { CartContext } from '../CardContext';
 import { useContext } from 'react';
 import CartProduct from './CartProduct';
-import { MainButton, useShowPopup } from '@vkruglikov/react-telegram-web-app';
+import { MainButton } from '@vkruglikov/react-telegram-web-app';
 import { getProductData } from '../products'
-import axios, {isCancel, AxiosError} from 'axios';
+import axios from 'axios';
 import * as qs from 'qs'
 
 function TgButton () {
@@ -57,7 +57,7 @@ function TgButton () {
 
 
           window.Telegram.WebApp.onEvent('invoiceClosed', function(object) {
-            if (object.status == 'paid') {
+            if (object.status === 'paid') {
     
                 axios.get(api_url+'/send_data', {
                     headers: { 'ngrok-skip-browser-warning': '1234'},
