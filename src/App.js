@@ -1,24 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import NavbarComponent from './components/Navbar';
+import { Container } from 'react-bootstrap';
+import {BrowserRouter, Route, Routes} from 'react-router-dom'
+import Cancel from './pages/Cancel';
+import Success from './pages/Success';
+import Store from './pages/Store';
+import CartPovider from './CardContext'
+import TgButton from './components/TgButton'
+
+import logo from "./photo/Group 9533.png"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <CartPovider>
+      <Container>
+        <img src={logo} className='imgLogo'></img>
+        {/* <NavbarComponent></NavbarComponent> */}
+          <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Store> </Store>}> </Route>
+                <Route path="success" element={<Success> </Success>}> </Route>
+                <Route path="cancel" element={<Cancel> </Cancel>}> </Route>
+            </Routes>
+          </BrowserRouter>
+        <TgButton></TgButton>
+          
+      </Container>
+    </CartPovider>
   );
 }
 

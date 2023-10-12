@@ -36,3 +36,49 @@
     transform: rotate(360deg);
   }
 }
+
+.imgLogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  margin-bottom: 50px;
+  margin-top: 25px;
+}
+
+.CartTitle{
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.CartDescription{
+  font-size: 0.85rem;
+  height: auto;
+  text-align: start;
+}
+
+.CartPrice{
+  font-weight: bold;
+  text-align: start;
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 30px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.fa-plus-circle::before {
+  content: "\f055";
+}
+
+.fa-plus-circle::before {
+  content: "\f055";
+}
+
+.FormLabel{
+  font-size: 24px !important;
+  font-weight: bold;
+}
