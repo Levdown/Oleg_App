@@ -12,7 +12,7 @@ function TgButton () {
 
     const cart = useContext(CartContext);
     const productCounts = cart.items.reduce((sum, product)=> sum + product.quantity, 0);
-    const api_url = "http://levqn.pythonanywhere.com"
+    const api_url = "https://levqn.pythonanywhere.com"
     const user_id = window.Telegram.WebApp.initDataUnsafe.user.id;
     const username = window.Telegram.WebApp.initDataUnsafe.user.username;
     const name = window.Telegram.WebApp.initDataUnsafe.user.first_name;
