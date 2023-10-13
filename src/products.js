@@ -1,10 +1,10 @@
-import photo1 from "./photo/iBOX One LaserVision WiFi Signature с лицевой стороны.png"
-import photo2 from "./photo/iBOX Nova LaserVision WiFi Signature Dual с лицевой стороны.jpg"
-import photo3 from "./photo/iBOX F5 LaserScan WiFi Signature Dual с лицевой стороны.jpg"
-import photo4 from "./photo/iBOX Evo LaserVision WiFi Signature Dual с лицевой стороны.jpg"
-import photo5 from "./photo/Rover WiFi GPS Dual комплектация.jpg"
-import photo6 from "./photo/RoadScan с обратной стороны.jpg"
-import photo7 from "./photo/iBOX Alpha WiFi комплектация.jpg"
+import photo1 from "./photo/iBOX One LaserVision WiFi Signature с лицевой стороны.jrx"
+import photo2 from "./photo/iBOX Nova LaserVision WiFi Signature Dual с лицевой стороны.jrx"
+import photo3 from "./photo/iBOX F5 LaserScan WiFi Signature Dual с лицевой стороны.jrx"
+import photo4 from "./photo/iBOX Evo LaserVision WiFi Signature Dual с лицевой стороны.jrx"
+import photo5 from "./photo/Rover WiFi GPS Dual комплектация.jrx"
+import photo6 from "./photo/RoadScan с обратной стороны.jrx"
+import photo7 from "./photo/iBOX Alpha WiFi комплектация.jrx"
 
 
 const dataProducts = [
