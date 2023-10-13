@@ -7,13 +7,13 @@
 // import photo7 from "./photo/iBOX Alpha WiFi комплектация.jpg"
 
 
-const photo1 = "./photo/iBOX Alpha WiFi комплектация.jxr"
-const photo2 = "./photo/iBOX Evo LaserVision WiFi Signature Dual с лицевой стороны.jxr"
-const photo3 = "./photo/iBOX F5 LaserScan WiFi Signature Dual с лицевой стороны.jxr"
-const photo4 = "./photo/iBOX Nova LaserVision WiFi Signature Dual с лицевой стороны.jxr"
-const photo5 = "./photo/iBOX One LaserVision WiFi Signature с лицевой стороны.jxr"
-const photo6 = "./photo/RoadScan.jxr"
-const photo7 = "./photo/Rover WiFi GPS Dual комплектация.jxr"
+import photo1 from "./photo/iBOX Alpha WiFi комплектация.jxr"
+import photo2 from "./photo/iBOX Evo LaserVision WiFi Signature Dual с лицевой стороны.jxr"
+import photo3 from  "./photo/iBOX F5 LaserScan WiFi Signature Dual с лицевой стороны.jxr"
+import photo4 from  "./photo/iBOX Nova LaserVision WiFi Signature Dual с лицевой стороны.jxr"
+import photo5 from  "./photo/iBOX One LaserVision WiFi Signature с лицевой стороны.jxr"
+import photo6 from  "./photo/RoadScan.jxr"
+import photo7 from  "./photo/Rover WiFi GPS Dual комплектация.jxr"
 
 
 const dataProducts = [
