@@ -6,7 +6,6 @@ import photo5 from "./photo/Rover WiFi GPS Dual комплектация.jxr"
 import photo6 from "./photo/RoadScan с обратной стороны.jxr"
 import photo7 from "./photo/iBOX Alpha WiFi комплектация.jxr"
 
-
 const dataProducts = [
     {
         id: 1,
