@@ -79,4 +79,16 @@ function getProductData(id) {
     return productData;
 }
 
-export {dataProducts, getProductData};
+function setDiscount(id, discount){
+
+    for (var i = 0; i < dataProducts.length; i++) {
+        if (dataProducts[i].id === id) {
+            dataProducts[i].price = ((dataProducts[i].price) - dataProducts[i].price * 0.01 * discount);
+        return;
+        }
+    }
+    
+
+}
+
+export {dataProducts, getProductData, setDiscount};

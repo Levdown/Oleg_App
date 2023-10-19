@@ -82,3 +82,17 @@
   font-size: 24px !important;
   font-weight: bold;
 }
+
+.promo-input {
+  border: 2px solid black;
+  border-radius: 4px;
+  width: 190px;
+}
+
+.promo-button{
+  border: 10px solid;
+  background-color: blue;
+  color: white;
+  margin-left: 10px;
+  font-size: 16px;
+}

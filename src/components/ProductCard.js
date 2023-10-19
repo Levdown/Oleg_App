@@ -2,6 +2,7 @@ import {Card, Button, Col, FormLabel, Form, Modal} from 'react-bootstrap'
 import { CartContext } from '../CardContext';
 import { useContext } from 'react';
 import "../App.css"
+import { MainButton } from '@vkruglikov/react-telegram-web-app';
 
 
 function ProductCard(props){
@@ -26,9 +27,16 @@ function ProductCard(props){
         }
       }
 
+
     return (
         <Card className='h-100'>
             <Card.Body className='d-flex flex-column'>
+                
+                <a href="https://t.me/Wh1te_Boy">
+                    <Button>Консультация</Button>
+                </a>
+                {/* <Button onClick={()=>{{navigator.clipboard.writeText(product.name)}; window.Telegram.WebApp.openLink("https://t.me/Wh1te_Boy");}}>Консультация</Button> */}
+                
                 <p className='CartTitle'>{product.name}</p>
                 <Card.Img variant="top" src={product.photo} style={styles.cardImage} />
                 {/* <Card.Img variant="top" src={product.photo} className='card-img-top' /> */}

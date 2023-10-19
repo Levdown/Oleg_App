@@ -17,7 +17,6 @@ function Store (){
 
             </Row>
             <br></br>
-        
         </>
     )
 }

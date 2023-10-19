@@ -17,14 +17,17 @@ function App() {
       <Container>
         <img src={logo} className='imgLogo'></img>
         {/* <NavbarComponent></NavbarComponent> */}
+
           <BrowserRouter>
+            
             <Routes>
-                <Route path="/" element={<Store> </Store>}> </Route>
+                <Route path="/" element={<Store></Store>}> </Route>
                 <Route path="success" element={<Success> </Success>}> </Route>
                 <Route path="cancel" element={<Cancel> </Cancel>}> </Route>
             </Routes>
           </BrowserRouter>
-        <TgButton></TgButton>
+          <TgButton></TgButton> 
+        {/* <TgButton></TgButton> */}
           
       </Container>
     </CartPovider>

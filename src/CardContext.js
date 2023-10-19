@@ -1,5 +1,5 @@
 import { createContext, useState } from "react";
-import { getProductData } from "./products";
+import { getProductData, setDiscount } from "./products";
 
 export const CartContext = createContext({
     items: [],
@@ -7,7 +7,8 @@ export const CartContext = createContext({
     addOneToCart: () => {},
     removeOneFromCart: () => {},
     deleteFromCart: () => {},
-    getTotalCost: () => {}
+    getTotalCost: () => {},
+    setCartDiscount: () => {},
 });
 
 export function CartPovider({children}){
@@ -85,9 +86,40 @@ export function CartPovider({children}){
             const productData = getProductData(cartItem.id);
             totalCost += (productData.price * cartItem.quantity);
         });
+        console.log("summ in total cost: ", totalCost);
         return totalCost;
     }
+
+    // function setDiscount(discount){
+
+    //     cartProducts.map((cartItem)=>{
+    //         console.log("cartItem",cartItem);
+    //         const productData = getProductData(cartItem.id);
+    //         console.log("product data ",productData);
+    //         newPrice = (productData.price) - ((productData.price) * 0.01 * discount)
+    //         console.log("newprice",newPrice);
+    //         removeOneFromCart(cartItem.id)
+    //         addOneToCart()
+
+    //     })
+    // }
+
+
+    // function cardDiscount () {
+    //     let newPrice = 0;
+    //     cardProducts.map((cartItem)=> {
+
+    //     })
+    // }
     
+    function setCartDiscount (discount) {
+        cartProducts.map((currentProduct) =>
+        (
+            setDiscount(currentProduct.id, discount)
+        )
+        )
+    }
+
 
     const contextValue = {
         items: cartProducts,
@@ -95,7 +127,8 @@ export function CartPovider({children}){
         addOneToCart,
         removeOneFromCart,
         deleteFromCart,
-        getTotalCost
+        getTotalCost,
+        setCartDiscount,
     }
 
     return (
