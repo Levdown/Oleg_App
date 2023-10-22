@@ -1,6 +1,6 @@
 import photo1 from "./photo/iBOX Alpha WiFi комплектация.jpg"
 import photo2 from "./photo/RoadScan с обратной стороны.jpg"
-import photo3 from "./photo/Rover WiFi GPS Dual с лицевой стороны в автомобиле.jpg"
+import photo3 from "./photo/Rover WiFi GPS Dual с лицевой стороны в автомобиле.jpg"
 import photo4 from "./photo/iBOX Evo LaserVision WiFi Signature Dual с обратной стороны в автомобиле.jpg"
 import photo5 from "./photo/iBOX F5 LaserScan WiFi Signature Dual с обратной стороны в автомобиле.jpg"
 import photo6 from "./photo/iBOX Nova LaserVision WiFi Signature Dual с обратной стороны в автомобиле.jpg"
