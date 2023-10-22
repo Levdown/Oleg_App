@@ -5,7 +5,7 @@ import photo4 from "./photo/iBOX Evo LaserVision WiFi Signature Dual с обра
 import photo5 from "./photo/iBOX F5 LaserScan WiFi Signature Dual с обратной стороны в автомобиле.jpg"
 import photo6 from "./photo/iBOX Nova LaserVision WiFi Signature Dual с обратной стороны в автомобиле.jpg"
 import photo7 from "./photo/iBOX Alert LaserScan Signature Cloud комплектация.jpg"
-import photo8 from "./photo/iBOX One LaserVision WiFi Signature с лицевой стороны.png"
+import photo8 from "./photo/iBOX One LaserVision WiFi Signature с лицевой стороны.png"
 import photo9 from "./photo/iBOX Sonar LaserScan Signature Cloud комплектация.tif"
 
 
