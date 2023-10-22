@@ -20,6 +20,7 @@
 
     <script>
       let initData = new URLSearchParams(window.Telegram.WebApp.initData);
+      window.Telegram.WebApp.expand();
       // let initDataUnsafe = new URLSearchParams(window.Telegram.WebApp.initDataUnsafe);
       var initDataHash = initData.get('hash');
       // var chat_id = initDataUnsafe.user.id

@@ -1,4 +1,4 @@
-import {Modal, InputGroup, Form, Col} from 'react-bootstrap'
+import {Modal, InputGroup, Form, Col, Button} from 'react-bootstrap'
 import { useState } from 'react';
 import { CartContext } from '../CardContext';
 import { useContext } from 'react';
@@ -152,10 +152,10 @@ function TgButton () {
         <>
         {show === true && productCounts > 0?
             <>
-            <MainButton text={`Оформить покупку на ${total}$`} onClick={() => get_invoice(total, discountPercent, promoCode)}></MainButton>
+            <MainButton color="#FF790D" textColor="#232323" text={`Оформить покупку на ${total}₽`} onClick={() => get_invoice(total, discountPercent, promoCode)}></MainButton>
             </>
         :
-        <MainButton text={`Перейти в корзину (${productCounts})`} onClick={handleShow}></MainButton>
+        <MainButton color="#FF790D" textColor="#232323" text={`Перейти в корзину (${productCounts})`} onClick={handleShow}></MainButton>
         }
         
         
@@ -173,22 +173,24 @@ function TgButton () {
                         )}
                         
                         <section>
-                            <div>
-                                <label className='promocode'>У вас есть промокод?</label>
-                                <input className='promo-input' type="text" onChange={onEnterPromoCode} />
-                                <button className='promo-button' type="button" onClick={checkPromoCode}>Применить</button>
+                            <div className='form-group row'>
+                                <div className='col-xs-2'>
+                                    <label className='promocode'>У вас есть промокод?</label>
+                                    <input className="w-50 h-50 d-inline-block" type="text" onChange={onEnterPromoCode} />
+                                    <button className='checkBTN btn-sm ms-1' type="button" onClick={checkPromoCode}>Применить</button>
+                                </div>
                             </div>
                     
                             <div>
                             <ul>
                                 {discount > 0 && (
                                 <li>
-                                    Скидка: <span>{formatCurrency(discount)}</span>
+                                    Скидка: <span>{discount}₽</span>
                                 </li>
                                 )}
 
                                 <li>
-                                Общая сумма: <span>{formatCurrency(total)}</span>
+                                Общая сумма: <span>{total}₽</span>
                                 </li>
                             </ul>
                             </div>

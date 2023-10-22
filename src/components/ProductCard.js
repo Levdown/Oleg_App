@@ -32,20 +32,19 @@ function ProductCard(props){
         <Card className='h-100'>
             <Card.Body className='d-flex flex-column'>
                 
-                <a href="https://t.me/Wh1te_Boy">
-                    <Button>Консультация</Button>
-                </a>
+
                 {/* <Button onClick={()=>{{navigator.clipboard.writeText(product.name)}; window.Telegram.WebApp.openLink("https://t.me/Wh1te_Boy");}}>Консультация</Button> */}
                 
                 <p className='CartTitle'>{product.name}</p>
                 <Card.Img variant="top" src={product.photo} style={styles.cardImage} />
                 {/* <Card.Img variant="top" src={product.photo} className='card-img-top' /> */}
                 <p className='CartDescription'>{product.description}</p>
-                <Card.Text className='CartPrice'>Цена: {product.price}$</Card.Text>
+        
+                <Card.Text className='CartPrice'>Цена: {product.price}₽</Card.Text>
+    
                 {productQuantity > 0 ?
                 <>
                     <Form as={Col} className='mt-auto'>
-                    
                         {/* <FormLabel column='true' sm='6'>В корзине: {productQuantity}</FormLabel> */}
                         {/* <Col sm="6" className='col-sm mt-auto'> */}
                             {/* <i sm='6' className='mx-2 mt-auto fa fa-plus-circle' onClick={()=>cart.addOneToCart(product.id)}></i> */}
@@ -57,8 +56,14 @@ function ProductCard(props){
                     </Form>
                 </>
                 :
-                <Button className='mt-auto' variant='primary' onClick={()=>cart.addOneToCart(product.id)}>Добавить</Button>
+                <>
+                <button className='mt-auto addBtn' onClick={()=>cart.addOneToCart(product.id)}>Добавить</button>
+                </>
                 }
+                <a href="https://t.me/Wh1te_Boy">
+                <button className='consaltBTN btn-sm mt-2' variant='primary'>Консультация</button>
+                {/* <button className='addBtn btn-sm mt-2' variant='primary' >Консультация</button> */}
+                </a>
             </Card.Body>
         </Card>
     )

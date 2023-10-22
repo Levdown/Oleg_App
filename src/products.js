@@ -1,10 +1,12 @@
-import photo1 from "./photo/iBOX One LaserVision WiFi Signature с лицевой стороны.png"
-import photo2 from "./photo/iBOX Nova LaserVision WiFi Signature Dual с лицевой стороны.jpg"
-import photo3 from "./photo/iBOX F5 LaserScan WiFi Signature Dual с лицевой стороны.jpg"
-import photo4 from "./photo/iBOX Evo LaserVision WiFi Signature Dual с лицевой стороны.jpg"
-import photo5 from "./photo/Rover WiFi GPS Dual комплектация.jpg"
-import photo6 from "./photo/RoadScan.jpg"
-import photo7 from "./photo/iBOX Alpha WiFi комплектация.jpg"
+import photo1 from "./photo/iBOX Alpha WiFi комплектация.jpg"
+import photo2 from "./photo/RoadScan с обратной стороны.jpg"
+import photo3 from "./photo/Rover WiFi GPS Dual с лицевой стороны в автомобиле.jpg"
+import photo4 from "./photo/iBOX Evo LaserVision WiFi Signature Dual с обратной стороны в автомобиле.jpg"
+import photo5 from "./photo/iBOX F5 LaserScan WiFi Signature Dual с обратной стороны в автомобиле.jpg"
+import photo6 from "./photo/iBOX Nova LaserVision WiFi Signature Dual с обратной стороны в автомобиле.jpg"
+import photo7 from "./photo/iBOX Alert LaserScan Signature Cloud комплектация.jpg"
+import photo8 from "./photo/iBOX One LaserVision WiFi Signature с лицевой стороны.png"
+import photo9 from "./photo/iBOX Sonar LaserScan Signature Cloud комплектация.tif"
 
 
 // import photo1 from "./photo/iBOX Alpha WiFi комплектация.jxr"
@@ -20,52 +22,66 @@ const dataProducts = [
     {
         id: 1,
         name: "iBOX One LaserVision WiFi Signature",
-        description: "Описание Характеристики Данные Прочее",
-        price: 50.0,
+        description: "Новый компактный видеорегистратор с возможностью копирования файлов по WiFi, удобным магнитным креплением с активным питанием и надежным суперконденсатором",
+        price: 6499.0,
         photo: photo1,
     },
     {
         id: 2,
-        name: "iBOX Nova LaserVision WiFi Signature Dual",
-        description: "Описание Характеристики Данные Прочее",
-        price: 55.0,
+        name: "iBOX RoadScan WiFi GPS Dual",
+        description: "Новейший видеорегистратор с GPS/ГЛОНАСС базой камер, WiFi-модулем и возможностью подключения камеры заднего вида.",
+        price: 14999.0,
         photo: photo2,
     },
     {
         id: 3,
-        name: "iBOX F5 LaserScan WiFi Signature Dual",
-        description: "Описание Характеристики Данные Прочее",
-        price: 58.0,
+        name: "iBOX Rover WiFi GPS Dual",
+        description: "Новейший видеорегистратор с GPS/ГЛОНАСС базой камер, WiFi-модулем и камерой заднего вида.",
+        price: 13499.0,
         photo: photo3,
     },
     {
         id: 4,
         name: "iBOX Evo LaserVision WiFi Signature Dual",
-        description: "Описание Характеристики Данные Прочее",
-        price: 49.0,
+        description: "Современное комбо-устройство с фирменной технологией LaserVision дальнобойным модулем XDR и усилителем сигнала LNA.",
+        price: 24999.0,
         photo: photo4,
     },
     {
         id: 5,
-        name: "Rover WiFi GPS Dual",
-        description: "Описание Характеристики Данные Прочее",
-        price: 60.0,
+        name: "iBOX F5 LaserScan WiFi Signature Dual",
+        description: "Комбо-устройство с эффективной для дальнобойного детектирования малошумных камер рупорной антенной, сигнатурной технологией, современной оптической системой, обновляемой со смартфона базой камер и максимальным функционалом в своем классе устройств.",
+        price: 27999.0,
         photo: photo5,
     },
     {
         id: 6,
-        name: "RoadScan",
-        description: "Описание Характеристики Данные Прочее",
-        price: 55.0,
+        name: "iBOX Nova LaserVision WiFi Signature Dual",
+        description: "Комбо-устройство с сигнатурным радар-детектором, фирменной технологией LaserVision, дальнобойным модулем ADR iLogic и возможностью обновления базы камер и копирования файлов по WiFi.",
+        price: 19999.0,
         photo: photo6,
     },
     {
         id: 7,
-        name: "iBOX Alpha WiFi",
-        description: "Описание Характеристики Данные Прочее",
-        price: 70.0,
+        name: "iBOX Alert LaserScan Signature Cloud",
+        description: "Сигнатурный радар-детектор с уникальным сервисом Cloud для автоматического обновления, технологией LaserScan, дальнобойным модулем ADR CORE и большим информативным дисплеем.",
+        price: 8499.0,
         photo: photo7,
-    }
+    },
+    {
+        id: 8,
+        name: "iBOX One LaserVision WiFi Signature",
+        description: "Сигнатурный радар-детектор, с фирменной технологией LaserVision, дальнобойным модулем ADR iLogic, усилителем сигнала LNA и возможностью обновления базы камер по WiFi.",
+        price: 12999.0,
+        photo: photo8,
+    },
+    {
+        id: 9,
+        name: "iBOX Sonar LaserScan Signature Cloud",
+        description: "Сигнатурный радар-детектор с уникальной технологией LaserScan, дальнобойным модулем  ADR CORE, библиотекой различных источников ложных сигналов Z-сигнатур и большим информативным дисплеем.",
+        price: 9999.0,
+        photo: photo9,
+    }    
 ]
 
 function getProductData(id) {
