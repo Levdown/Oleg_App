@@ -9,7 +9,7 @@ import Store from './pages/Store';
 import CartPovider from './CardContext'
 import TgButton from './components/TgButton'
 
-import logo from "./photo/Group 9533.png"
+import logo from "./photo/Group-9533.webp"
 
 function App() {
   return (
