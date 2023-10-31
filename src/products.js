@@ -16,7 +16,7 @@ import photo5 from "./photo/iBOX-F5-LaserScan-WiFi-Signature-Dual-с-обрат�
 import photo6 from "./photo/iBOX-Nova-LaserVision-WiFi-Signature-Dual-с-обратной-стороны-в-автомобиле.webp"
 import photo7 from "./photo/iBOX-Alert-LaserScan-Signature-Cloud-комплектация.webp"
 import photo8 from "./photo/iBOX-One-LaserVision-WiFi-Signature-с-лицевой-стороны.webp"
-import photo9 from "./photo/iBOX-Sonar-LaserScan-Signature-Cloud-комплектация.webp"
+import photo9 from "./photo/iBOX Sonar LaserScan Signature Cloud комплектация.webp"
 
 // import photo1 from "./photo/iBOX Alpha WiFi комплектация.jxr"
 // import photo2 from "./photo/iBOX Evo LaserVision WiFi Signature Dual с лицевой стороны.jxr"
