@@ -32,7 +32,7 @@ const dataProducts = [
         id: 1,
         name: "iBOX One LaserVision WiFi Signature",
         description: "Новый компактный видеорегистратор с возможностью копирования файлов по WiFi, удобным магнитным креплением с активным питанием и надежным суперконденсатором",
-        price: 500.0,
+        price: 501.0,
         photo: photo1,
     },
     {
