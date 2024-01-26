@@ -32,10 +32,10 @@ function ProductCard(props){
 
 
     if (value){
-        value_options = value.map((i)=>({value: i, label: i}))
+        const value_options = value.map((i)=>({value: i, label: i}))
     }
     else{
-        value_options = undefined;
+        const value_options = undefined;
     }
 
     const pak = product.pak;
