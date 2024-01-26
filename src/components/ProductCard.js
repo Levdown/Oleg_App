@@ -34,6 +34,9 @@ function ProductCard(props){
     if (value){
         const value_options = value.map((i)=>({value: i, label: i}))
     }
+    else{
+        value_options = undefined;
+    }
 
     const pak = product.pak;
 
