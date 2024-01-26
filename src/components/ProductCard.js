@@ -43,6 +43,8 @@ function ProductCard(props){
                 {Object.hasOwn(product, 'value') ?
                 <>
                     <p className='CartDescription'>Объем: {product.value}</p>
+
+                    <Card.Text className='CartPrice'>Цена: {product.price[product.value[0]]}₽</Card.Text>
                 </>
                 :
                 <>
@@ -50,7 +52,7 @@ function ProductCard(props){
                 </>
                 }
 
-                <Card.Text className='CartPrice'>Цена: {product.price[product.value[0]]}₽</Card.Text>
+                <Card.Text className='CartPrice'>Цена: {product.price}₽</Card.Text>
     
                 {productQuantity > 0 ?
                 <>
