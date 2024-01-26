@@ -27,6 +27,10 @@ function ProductCard(props){
         }
       }
 
+    const value = product.value;
+    const pak = product.pak;
+
+
 
     return (
         <Card className='h-100'>
@@ -40,7 +44,7 @@ function ProductCard(props){
                 {/* <Card.Img variant="top" src={product.photo} className='card-img-top' /> */}
                 <p className='CartDescription'>{product.description}</p>
 
-                {"value" in product ?
+                {value ?
                 <>
                     <p className='CartDescription'>Объем: {product.value}</p>
 
