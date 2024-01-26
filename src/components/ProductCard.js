@@ -40,7 +40,7 @@ function ProductCard(props){
                 {/* <Card.Img variant="top" src={product.photo} className='card-img-top' /> */}
                 <p className='CartDescription'>{product.description}</p>
 
-                {Object.hasOwn(product, 'value') ?
+                {"value" in product ?
                 <>
                     <p className='CartDescription'>Объем: {product.value}</p>
 
