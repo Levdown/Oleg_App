@@ -34,8 +34,8 @@ const dataProducts = [
         description: "Описание молока",
         value: ['0.5 л.', "1 л."],
         pak: ["Пластик", "Стекло"],
-        // price: {'0.5 л.': 115, "1 л.": 210},
-        price: 200,
+        price: {'0.5 л.': 115, "1 л.": 210},
+        //price: 200,
         photo: photo1,
     },
     {

@@ -39,18 +39,18 @@ function ProductCard(props){
                 <Card.Img variant="top" src={product.photo} style={styles.cardImage} />
                 {/* <Card.Img variant="top" src={product.photo} className='card-img-top' /> */}
                 <p className='CartDescription'>{product.description}</p>
-{/* 
+
                 {Object.hasOwn(product, 'value') ?
                 <>
-                    <p className='CartDescription'>Объем:</p>
+                    <p className='CartDescription'>Объем: {product.value}</p>
                 </>
                 :
                 <>
-                    <p className='CartDescription'>Объема нет:</p>
+                    <p className='CartDescription'>Объема нет</p>
                 </>
-                } */}
+                }
 
-                <Card.Text className='CartPrice'>Цена: {product.price}₽</Card.Text>
+                <Card.Text className='CartPrice'>Цена: {product.price[product.value[0]]}₽</Card.Text>
     
                 {productQuantity > 0 ?
                 <>
