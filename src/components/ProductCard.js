@@ -1,7 +1,8 @@
 import {Card, Button, Col, FormLabel, Form, Modal} from 'react-bootstrap'
 import { CartContext } from '../CardContext';
 import { useContext } from 'react';
-import Select from 'react-select'
+import Select, {OnChangeValue} from 'react-select'
+import { useState } from 'react';
 import "../App.css"
 import { MainButton } from '@vkruglikov/react-telegram-web-app';
 
@@ -28,7 +29,8 @@ function ProductCard(props){
         }
       }
 
-
+    // const [selectedValue, setSelectedValue] = useState();
+  
 
     return (
         <Card className='h-100'>
@@ -45,14 +47,20 @@ function ProductCard(props){
                 {product.value ?
                 <>
                     
-                    <Select options={product.value.map((i) => ({value: i, label: i}))} />
+                    <Select
+                        defaultValue={product.value[0]}
+                        options={product.value.map((i) => ({value: i, label: i}))}
+                    />
+
+                    <Card.Text className='CartPrice'>Цена: {product.price[product.value[0]]}₽</Card.Text>
                 </>
                 :
                 <>
+                    <Card.Text className='CartPrice'>Цена: {product.price}₽</Card.Text>
                 </>
                 }
 
-                <Card.Text className='CartPrice'>Цена: {product.price}₽</Card.Text>
+                
                 
                 {productQuantity > 0 ?
                 <>

@@ -8,15 +8,32 @@
 // import photo8 from "./photo/iBOX One LaserVision WiFi Signature с лицевой стороны.png"
 // import photo9 from "./photo/iBOX Sonar LaserScan Signature Cloud комплектация.tif"
 
-import photo1 from "./photo/iBOX-Alpha-WiFi-комплектация.webp"
-import photo2 from "./photo/RoadScan-с-обратной-стороны.webp"
-import photo3 from "./photo/Rover-WiFi-GPS-Dual-с-лицевой-стороны-в-автомобиле.webp"
-import photo4 from "./photo/iBOX-Evo-LaserVision-WiFi-Signature-Dual-с-обратной-стороны-в-автомобиле.webp"
-import photo5 from "./photo/iBOX-F5-LaserScan-WiFi-Signature-Dual-с-обратной-стороны-в-автомобиле.webp"
-import photo6 from "./photo/iBOX-Nova-LaserVision-WiFi-Signature-Dual-с-обратной-стороны-в-автомобиле.webp"
-import photo7 from "./photo/iBOX-Alert-LaserScan-Signature-Cloud-комплектация.webp"
-import photo8 from "./photo/iBOX-One-LaserVision-WiFi-Signature-с-лицевой-стороны.webp"
-import photo9 from "./photo/iBOX Sonar LaserScan Signature Cloud комплектация.webp"
+// import photo1 from "./photo/iBOX-Alpha-WiFi-комплектация.webp"
+// import photo2 from "./photo/RoadScan-с-обратной-стороны.webp"
+// import photo3 from "./photo/Rover-WiFi-GPS-Dual-с-лицевой-стороны-в-автомобиле.webp"
+// import photo4 from "./photo/iBOX-Evo-LaserVision-WiFi-Signature-Dual-с-обратной-стороны-в-автомобиле.webp"
+// import photo5 from "./photo/iBOX-F5-LaserScan-WiFi-Signature-Dual-с-обратной-стороны-в-автомобиле.webp"
+// import photo6 from "./photo/iBOX-Nova-LaserVision-WiFi-Signature-Dual-с-обратной-стороны-в-автомобиле.webp"
+// import photo7 from "./photo/iBOX-Alert-LaserScan-Signature-Cloud-комплектация.webp"
+// import photo8 from "./photo/iBOX-One-LaserVision-WiFi-Signature-с-лицевой-стороны.webp"
+// import photo9 from "./photo/iBOX Sonar LaserScan Signature Cloud комплектация.webp"
+
+import photo1 from "./bogimov_photo/moloko1.jpg"
+import photo2 from "./bogimov_photo/kefir1.jpg"
+import photo3 from "./bogimov_photo/syvorot1.jpeg"
+import photo4 from "./bogimov_photo/slyvki05.jpeg"
+import photo5 from "./bogimov_photo/tvorog.jpeg"
+import photo6 from "./bogimov_photo/smetana1.jpeg"
+import photo7 from "./bogimov_photo/maslo.jpeg"
+import photo8 from "./bogimov_photo/maslo1.jpeg"
+import photo9 from "./bogimov_photo/orgsir.jpeg"
+import photo10 from "./bogimov_photo/orgsir1.jpeg"
+import photo11 from "./bogimov_photo/orgsir1.jpeg"
+import photo12 from "./bogimov_photo/orgsirka.jpeg"
+import photo13 from "./bogimov_photo/orgsirpo.jpeg"
+import photo14 from "./bogimov_photo/orgsirdz.jpeg"
+import photo15 from "./bogimov_photo/orgsirka1.jpeg"
+import photo16 from "./bogimov_photo/orgsirzh.jpeg"
 
 // import photo1 from "./photo/iBOX Alpha WiFi комплектация.jxr"
 // import photo2 from "./photo/iBOX Evo LaserVision WiFi Signature Dual с лицевой стороны.jxr"
@@ -31,69 +48,107 @@ const dataProducts = [
     {
         id: 1,
         name: "Органическое МОЛОКО 5-6% коров породы джерси",
-        description: "Описание молока",
-        value: ['0.5 л.', "1 л."],
-        pak: ["Пластик", "Стекло"],
-        price: {'0.5 л.': 115, "1 л.": 210},
-        //price: 200,
+        price: 210,
         photo: photo1,
     },
     {
         id: 2,
-        name: "iBOX RoadScan WiFi GPS Dual",
-        description: "Новейший видеорегистратор с GPS/ГЛОНАСС базой камер, WiFi-модулем и возможностью подключения камеры заднего вида.",
-        price: 14999.0,
+        name: "Органический КЕФИР 2% из молока коров породы джерси",
+        // description: "Новейший видеорегистратор с GPS/ГЛОНАСС базой камер, WiFi-модулем и возможностью подключения камеры заднего вида.",
+        value: ['0.5 л.', "1 л."],
+        price: 340,
         photo: photo2,
     },
     {
         id: 3,
-        name: "iBOX Rover WiFi GPS Dual",
-        description: "Новейший видеорегистратор с GPS/ГЛОНАСС базой камер, WiFi-модулем и камерой заднего вида.",
-        price: 13499.0,
+        name: "Органическая СЫВОРОТКА ПИТЬЕВАЯ из молока коров породы Джерси. 1 л",
+        price: 80,
         photo: photo3,
     },
     {
         id: 4,
-        name: "iBOX Evo LaserVision WiFi Signature Dual",
-        description: "Современное комбо-устройство с фирменной технологией LaserVision дальнобойным модулем XDR и усилителем сигнала LNA.",
-        price: 24999.0,
+        name: "Органические СЛИВКИ ПИТЬЕВЫЕ 25% из молока коров породы Джерси",
+        // description: "Современное комбо-устройство с фирменной технологией LaserVision дальнобойным модулем XDR и усилителем сигнала LNA.",
+        price: 470,
         photo: photo4,
     },
     {
         id: 5,
-        name: "iBOX F5 LaserScan WiFi Signature Dual",
-        description: "Комбо-устройство с эффективной для дальнобойного детектирования малошумных камер рупорной антенной, сигнатурной технологией, современной оптической системой, обновляемой со смартфона базой камер и максимальным функционалом в своем классе устройств.",
-        price: 27999.0,
+        name: "Органический ТВОРОГ 5% - 9% из молока коров породы Джерси.",
+        price: 420,
         photo: photo5,
     },
     {
         id: 6,
-        name: "iBOX Nova LaserVision WiFi Signature Dual",
-        description: "Комбо-устройство с сигнатурным радар-детектором, фирменной технологией LaserVision, дальнобойным модулем ADR iLogic и возможностью обновления базы камер и копирования файлов по WiFi.",
-        price: 19999.0,
+        name: "Органическая СМЕТАНА 25% из молока коров породы Джерси. 220 гр",
+        // description: "Комбо-устройство с сигнатурным радар-детектором, фирменной технологией LaserVision, дальнобойным модулем ADR iLogic и возможностью обновления базы камер и копирования файлов по WiFi.",
+        price: 320,
         photo: photo6,
     },
     {
         id: 7,
-        name: "iBOX Alert LaserScan Signature Cloud",
-        description: "Сигнатурный радар-детектор с уникальным сервисом Cloud для автоматического обновления, технологией LaserScan, дальнобойным модулем ADR CORE и большим информативным дисплеем.",
-        price: 8499.0,
+        name: "Органическое МАСЛО СЛИВОЧНОЕ 82,5% из молока коров породы джерси. 200 гр",
+        price: 580,
         photo: photo7,
     },
     {
         id: 8,
-        name: "iBOX One LaserVision WiFi Signature",
-        description: "Сигнатурный радар-детектор, с фирменной технологией LaserVision, дальнобойным модулем ADR iLogic, усилителем сигнала LNA и возможностью обновления базы камер по WiFi.",
-        price: 12999.0,
+        name: "Органическое МАСЛО ТОПЛЕНОЕ (ГХИ) из молока коров породы джерси",
+        // description: "Сигнатурный радар-детектор, с фирменной технологией LaserVision, дальнобойным модулем ADR iLogic, усилителем сигнала LNA и возможностью обновления базы камер по WiFi.",
+        price: 1200,
         photo: photo8,
     },
     {
         id: 9,
-        name: "iBOX Sonar LaserScan Signature Cloud",
-        description: "Сигнатурный радар-детектор с уникальной технологией LaserScan, дальнобойным модулем  ADR CORE, библиотекой различных источников ложных сигналов Z-сигнатур и большим информативным дисплеем.",
-        price: 9999.0,
+        name: "Органический сыр «Провола» из молока коров породы Джерси",
+        price: 1500,
         photo: photo9,
-    }    
+    },
+    {
+        id: 10,
+        name: "Органический сыр «Имеретинский» из молока коров породы Джерси",
+        price: 315,
+        photo: photo10,
+    },
+    {
+        id: 11,
+        name: "Органический сыр «Качотта с пажитником» из молока коров породы Джерси",
+        price: 1440,
+        photo: photo11,
+    },
+    {
+        id: 12,
+        name: "Органический сыр «Богимовский» из молока коров породы Джерси",
+        price: 1120,
+        photo: photo12,
+    },
+    {
+        id: 13,
+        name: "Органический сыр «По рецепту Гауда» из молока коров породы Джерси",
+        price: 1080,
+        photo: photo13,
+    },
+    {
+        id: 14,
+        name: "Органический сыр «Джерси Чеддер» из молока коров породы Джерси",
+        price: 870,
+        photo: photo14,
+    },
+    {
+        id: 15,
+        name: "Органический сыр «Качотта» из молока коров породы Джерси",
+        price: 1410,
+        photo: photo15,
+    },
+    {
+        id: 16,
+        name: "Органический сыр «Жарсыр» (сыр для жарки) из молока коров породы Джерси. 1 кг",
+        price: 600,
+        photo: photo16,
+    },  
+
+
+
 ]
 
 function getProductData(id) {
