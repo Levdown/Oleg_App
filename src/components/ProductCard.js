@@ -1,6 +1,7 @@
 import {Card, Button, Col, FormLabel, Form, Modal} from 'react-bootstrap'
 import { CartContext } from '../CardContext';
 import { useContext } from 'react';
+import Select from 'react-select'
 import "../App.css"
 import { MainButton } from '@vkruglikov/react-telegram-web-app';
 
@@ -28,6 +29,12 @@ function ProductCard(props){
       }
 
     const value = product.value;
+
+
+    if (value){
+        const value_options = value.map((i)=>({value: i, label: i}))
+    }
+
     const pak = product.pak;
 
 
@@ -44,20 +51,11 @@ function ProductCard(props){
                 {/* <Card.Img variant="top" src={product.photo} className='card-img-top' /> */}
                 <p className='CartDescription'>{product.description}</p>
 
-                {value ?
-                <>
-                    <p className='CartDescription'>Объем: {product.value}</p>
-
-                    <Card.Text className='CartPrice'>Цена: {product.price[product.value[0]]}₽</Card.Text>
-                </>
-                :
-                <>
-                    <p className='CartDescription'>Объема нет</p>
-                </>
-                }
+                
+                <Select options={value_options} />
 
                 <Card.Text className='CartPrice'>Цена: {product.price}₽</Card.Text>
-    
+                
                 {productQuantity > 0 ?
                 <>
                     <Form as={Col} className='mt-auto'>
