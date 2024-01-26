@@ -28,18 +28,6 @@ function ProductCard(props){
         }
       }
 
-    const value = product.value;
-
-
-    if (value){
-        const value_options = value.map((i)=>({value: i, label: i}))
-    }
-    else{
-        const value_options = undefined;
-    }
-
-    const pak = product.pak;
-
 
 
     return (
@@ -54,8 +42,15 @@ function ProductCard(props){
                 {/* <Card.Img variant="top" src={product.photo} className='card-img-top' /> */}
                 <p className='CartDescription'>{product.description}</p>
 
-                
-                <Select options={value_options} />
+                {product.value ?
+                <>
+                    
+                    <Select options={product.value.map((i) => ({value: i, label: i}))} />
+                </>
+                :
+                <>
+                </>
+                }
 
                 <Card.Text className='CartPrice'>Цена: {product.price}₽</Card.Text>
                 
