@@ -15,9 +15,9 @@ function App() {
   return (
     <CartPovider>
       <Container>
-        <img src={logo} className='imgLogo'></img>
+        {/* <img src={logo} className='imgLogo'></img> */}
         {/* <NavbarComponent></NavbarComponent> */}
-
+          <p>Органическая продукция из молока коров породы Джерси</p>
           <BrowserRouter>
             
             <Routes>
