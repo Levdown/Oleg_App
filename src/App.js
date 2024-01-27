@@ -17,7 +17,7 @@ function App() {
       <Container>
         {/* <img src={logo} className='imgLogo'></img> */}
         {/* <NavbarComponent></NavbarComponent> */}
-          <h1>Органическая продукция из молока коров породы Джерси</h1>
+          <h1 className='cctext'>Органическая продукция из молока коров породы Джерси</h1>
           <BrowserRouter>
             
             <Routes>
