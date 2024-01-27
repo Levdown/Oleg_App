@@ -42,7 +42,7 @@ function ProductCard(props){
                 <p className='CartTitle'>{product.name}</p>
                 <Card.Img variant="top" src={product.photo} style={styles.cardImage} />
                 {/* <Card.Img variant="top" src={product.photo} className='card-img-top' /> */}
-                <p className='CartDescription'>{product.description}</p>
+                {/* <p className='CartDescription'>{product.description}</p> */}
 
                 {product.value ?
                 <>
