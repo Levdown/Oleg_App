@@ -80,7 +80,7 @@ function ProductCard(props){
                 <button className='mt-auto addBtn' onClick={()=>cart.addOneToCart(product.id)}>Добавить</button>
                 </>
                 }
-                <a href="https://t.me/Wh1te_Boy">
+                <a href="https://t.me/hi_ovsf">
                 <button className='consaltBTN btn-sm mt-2' variant='primary'>Консультация</button>
                 {/* <button className='addBtn btn-sm mt-2' variant='primary' >Консультация</button> */}
                 </a>
