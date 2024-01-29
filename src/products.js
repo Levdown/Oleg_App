@@ -88,7 +88,7 @@ const dataProducts = [
     {
         id: 6,
         name: "Органическая СЫВОРОТКА ПИТЬЕВАЯ из молока коров породы Джерси. 0.5 л.",
-        price: 80,
+        price: 45,
         photo: photo6,
     },
 
