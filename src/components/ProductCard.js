@@ -42,7 +42,7 @@ function ProductCard(props){
                 <p className='CartTitle'>{product.name}</p>
                 {product.space ?
                 <>
-                    <span style={{color: 'white'}}>{product.space}</span>
+                    <span style={{color: 'black'}}>{product.space}</span>
                 </>
                 :
                 <>
