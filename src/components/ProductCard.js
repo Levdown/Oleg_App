@@ -38,10 +38,10 @@ function ProductCard(props){
                 <Card.Img variant="top" src={product.photo} style={styles.cardImage} />
                 <p className='CartTitle'>{product.name}</p>
 
-                <Card.Text className='CartPrice'>Цена: {product.price}₽</Card.Text>
                 {productQuantity > 0 ?
                 <>
                     <Form as={Col} className='mt-auto'>
+                    <Card.Text className='CartPrice'>Цена: {product.price}₽</Card.Text>
                         {/* <FormLabel column='true' sm='6'>В корзине: {productQuantity}</FormLabel> */}
                         {/* <Col sm="6" className='col-sm mt-auto'> */}
                             {/* <i sm='6' className='mx-2 mt-auto fa fa-plus-circle' onClick={()=>cart.addOneToCart(product.id)}></i> */}
@@ -54,6 +54,7 @@ function ProductCard(props){
                 </>
                 :
                 <>
+                <Card.Text className='CartPrice'>Цена: {product.price}₽</Card.Text>
                 <button className='mt-auto addBtn' onClick={()=>cart.addOneToCart(product.id)}>Добавить</button>
                 </>
                 }
