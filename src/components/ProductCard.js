@@ -42,7 +42,7 @@ function ProductCard(props){
                 <p className='CartTitle'>{product.name}</p>
                 {product.space ?
                 <>
-                    <span>{' '*5}</span>
+                    <span style={{display: 'none'}}>{product.space}</span>
                 </>
                 :
                 <>
