@@ -54,7 +54,7 @@ function ProductCard(props){
                 </>
                 :
                 <>
-                <Card.Text className='CartPrice'>Цена: {product.price}₽</Card.Text>
+                <Card.Text className='CartPrice mt-auto'>Цена: {product.price}₽</Card.Text>
                 <button className='mt-auto addBtn' onClick={()=>cart.addOneToCart(product.id)}>Добавить</button>
                 </>
                 }
