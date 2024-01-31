@@ -42,7 +42,7 @@ function ProductCard(props){
                 <p className='CartTitle'>{product.name}</p>
                 {product.space ?
                 <>
-                <br></br>
+                    {product.space.map((i)=>('\u00A0'))}
                 </>
                 :
                 <>
