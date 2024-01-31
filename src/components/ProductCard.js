@@ -39,7 +39,7 @@ function ProductCard(props){
 
                 {/* <Button onClick={()=>{{navigator.clipboard.writeText(product.name)}; window.Telegram.WebApp.openLink("https://t.me/Wh1te_Boy");}}>Консультация</Button> */}
                 
-                <p className='CartTitle'>{product.name}</p>
+                <p className='CartTitle'>{product.name}&emsp;</p>
                 <Card.Img variant="top" src={product.photo} style={styles.cardImage} />
                 {/* <Card.Img variant="top" src={product.photo} className='card-img-top' /> */}
                 {/* <p className='CartDescription'>{product.description}</p> */}
