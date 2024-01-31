@@ -35,13 +35,36 @@ function ProductCard(props){
     return (
         <Card className='h-100'>
             <Card.Body className='d-flex flex-column'>
-                <Card.Img variant="top" src={product.photo} style={styles.cardImage} />
-                <p className='CartTitle'>{product.name}</p>
+                
 
+                {/* <Button onClick={()=>{{navigator.clipboard.writeText(product.name)}; window.Telegram.WebApp.openLink("https://t.me/Wh1te_Boy");}}>Консультация</Button> */}
+                
+                <p className='CartTitle'>{product.name}</p>
+                <Card.Img variant="top" src={product.photo} style={styles.cardImage} />
+                {/* <Card.Img variant="top" src={product.photo} className='card-img-top' /> */}
+                {/* <p className='CartDescription'>{product.description}</p> */}
+
+                {product.value ?
+                <>
+                    
+                    <Select
+                        defaultValue={product.value[0]}
+                        options={product.value.map((i) => ({value: i, label: i}))}
+                    />
+
+                    <Card.Text className='CartPrice'>Цена: {product.price[product.value[0]]}₽</Card.Text>
+                </>
+                :
+                <>
+                    <Card.Text className='CartPrice'>Цена: {product.price}₽</Card.Text>
+                </>
+                }
+
+                
+                
                 {productQuantity > 0 ?
                 <>
                     <Form as={Col} className='mt-auto'>
-                    <Card.Text className='CartPrice'>Цена: {product.price}₽</Card.Text>
                         {/* <FormLabel column='true' sm='6'>В корзине: {productQuantity}</FormLabel> */}
                         {/* <Col sm="6" className='col-sm mt-auto'> */}
                             {/* <i sm='6' className='mx-2 mt-auto fa fa-plus-circle' onClick={()=>cart.addOneToCart(product.id)}></i> */}
@@ -54,7 +77,6 @@ function ProductCard(props){
                 </>
                 :
                 <>
-                <Card.Text className='CartPrice mt-auto'>Цена: {product.price}₽</Card.Text>
                 <button className='mt-auto addBtn' onClick={()=>cart.addOneToCart(product.id)}>Добавить</button>
                 </>
                 }
