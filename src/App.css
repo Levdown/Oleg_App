@@ -53,6 +53,7 @@
 .CartTitle{
   font-size: 0.7rem;
   font-weight: bold;
+  height: 100px;
 }
 
 .CartDescription{
