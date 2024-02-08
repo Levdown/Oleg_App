@@ -72,21 +72,12 @@ function TgButton () {
         let initDataHash = localStorage.getItem('initDataHash')
         let dataCheckString = localStorage.getItem('dataCheckString')
         let PRICES = []
-        console.log(initDataHash);
-        console.log(dataCheckString);
-        console.log(total, discountPercent)
         
         PRICES = cart.items.map((currentProduct) =>
         (
             {"label": `${getProductData(currentProduct.id).name} ${currentProduct.quantity}шт.`, "amount": (((getProductData(currentProduct.id).price * 100 * currentProduct.quantity) - ((getProductData(currentProduct.id).price * 100 * currentProduct.quantity) * discountPercent)/ 100))}
         )
         )
-
-
-
-        
-        console.log(JSON.stringify(PRICES));
-        console.log("-----------------11")    
 
         axios.get(api_url+'/create_invoice_link', {
             headers: { 'ngrok-skip-browser-warning': '1234'},
@@ -103,7 +94,6 @@ function TgButton () {
             }
           })
           .then(function (response) {
-            console.log(response.data);
             window.Telegram.WebApp.openInvoice(response.data);
           });    
         
@@ -129,7 +119,6 @@ function TgButton () {
                     }
                   })
                   .then(function (response) {
-                    console.log(response);
                     window.Telegram.WebApp.close();
                   });  
                 
@@ -141,10 +130,8 @@ function TgButton () {
 
 
     const [show, setShow] = useState(false);
-    function handleClose () { console.log("handel close "); setShow(false); }
+    function handleClose () { setShow(false); }
     const handleShow = () => setShow(true);    
-    console.log("showwww: ", show)
-    
     const total = summ - discount;
 
     return (
