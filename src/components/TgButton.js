@@ -139,7 +139,13 @@ function TgButton () {
         <>
         {show === true && productCounts > 0?
             <>
-            <MainButton color="#FF790D" textColor="#232323" text={`Оформить покупку на ${total}₽`} onClick={() => get_invoice(total, discountPercent, promoCode)}></MainButton>
+            <MainButton color="#FF790D" textColor="#232323" text={`Оформить покупку на ${total}₽`} onClick={() =>
+{ MainButton.disabled = true;
+  MainButton.classList.add("button-loader");
+setTimeout(() => {
+  MainButton.disabled = false
+  MainButton.classList.remove("button-loader")
+}, 2000), get_invoice(total, discountPercent, promoCode)}}></MainButton>
             </>
         :
         <MainButton color="#FF790D" textColor="#232323" text={`Перейти в корзину (${productCounts})`} onClick={handleShow}></MainButton>
