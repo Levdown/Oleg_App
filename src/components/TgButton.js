@@ -68,12 +68,14 @@ function TgButton () {
         alert("Извините, такого промокода не существует");
     };
 
-    function get_invoice(event, discountPercent, promoCode) {
+    function get_invoice(discountPercent, promoCode) {
         let initDataHash = localStorage.getItem('initDataHash')
         let dataCheckString = localStorage.getItem('dataCheckString')
         let PRICES = []
 
-        console.log("event: ", event)
+        window.Telegram.WebApp.MainButton.setParams({
+          is_progress_visible: true,
+        });
 
         
 
@@ -144,7 +146,7 @@ function TgButton () {
         <>
         {show === true && productCounts > 0?
             <>
-            <MainButton color="#FF790D" textColor="#232323" text={`Оформить покупку на ${total}₽`} onClick={e => get_invoice(e.target.value, discountPercent, promoCode)}></MainButton>
+            <MainButton color="#FF790D" textColor="#232323" text={`Оформить покупку на ${total}₽`} onClick={()=> get_invoice(discountPercent, promoCode)}></MainButton>
             </>
         :
         <MainButton color="#FF790D" textColor="#232323" text={`Перейти в корзину (${productCounts})`} onClick={handleShow}></MainButton>
