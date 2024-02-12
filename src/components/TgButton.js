@@ -72,7 +72,9 @@ function TgButton () {
         let initDataHash = localStorage.getItem('initDataHash')
         let dataCheckString = localStorage.getItem('dataCheckString')
         let PRICES = []
-        window.Telegram.MainButton.progress = true;
+
+        $(MainButton).prop("progress", true);
+        
         PRICES = cart.items.map((currentProduct) =>
         (
             {"label": `${getProductData(currentProduct.id).name} ${currentProduct.quantity}шт.`, "amount": (((getProductData(currentProduct.id).price * 100 * currentProduct.quantity) - ((getProductData(currentProduct.id).price * 100 * currentProduct.quantity) * discountPercent)/ 100))}
