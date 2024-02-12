@@ -144,7 +144,7 @@ function TgButton () {
         <>
         {show === true && productCounts > 0?
             <>
-            <MainButton color="#FF790D" textColor="#232323" text={`Оформить покупку на ${total}₽`} onClick={e => get_invoice(e, discountPercent, promoCode)}></MainButton>
+            <MainButton color="#FF790D" textColor="#232323" text={`Оформить покупку на ${total}₽`} onClick={e => get_invoice(e.target.value, discountPercent, promoCode)}></MainButton>
             </>
         :
         <MainButton color="#FF790D" textColor="#232323" text={`Перейти в корзину (${productCounts})`} onClick={handleShow}></MainButton>
