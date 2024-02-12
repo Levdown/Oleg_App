@@ -34,8 +34,7 @@ const PROMOTIONS = [
 
 
 
-function TgButton () {
-
+function TgButton () {    
     const cart = useContext(CartContext);
     const productCounts = cart.items.reduce((sum, product)=> sum + product.quantity, 0);
     console.log("prcount", productCounts)
@@ -79,7 +78,7 @@ function TgButton () {
 
        
 
-        
+        window.Telegram.WebApp.MainButton.showProgress();
 
         PRICES = cart.items.map((currentProduct) =>
         (
