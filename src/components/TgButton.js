@@ -68,13 +68,15 @@ function TgButton () {
         alert("Извините, такого промокода не существует");
     };
 
-    function get_invoice(total, discountPercent, promoCode) {
+    function get_invoice(event, discountPercent, promoCode) {
         let initDataHash = localStorage.getItem('initDataHash')
         let dataCheckString = localStorage.getItem('dataCheckString')
         let PRICES = []
 
-        $(MainButton).prop("progress", true);
+        console.log("event: ", event)
+
         
+
         PRICES = cart.items.map((currentProduct) =>
         (
             {"label": `${getProductData(currentProduct.id).name} ${currentProduct.quantity}шт.`, "amount": (((getProductData(currentProduct.id).price * 100 * currentProduct.quantity) - ((getProductData(currentProduct.id).price * 100 * currentProduct.quantity) * discountPercent)/ 100))}
@@ -142,7 +144,7 @@ function TgButton () {
         <>
         {show === true && productCounts > 0?
             <>
-            <MainButton color="#FF790D" textColor="#232323" text={`Оформить покупку на ${total}₽`} onClick={() => get_invoice(total, discountPercent, promoCode)}></MainButton>
+            <MainButton color="#FF790D" textColor="#232323" text={`Оформить покупку на ${total}₽`} onClick={e => get_invoice(e, discountPercent, promoCode)}></MainButton>
             </>
         :
         <MainButton color="#FF790D" textColor="#232323" text={`Перейти в корзину (${productCounts})`} onClick={handleShow}></MainButton>
