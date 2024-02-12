@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { CartContext } from '../CardContext';
 import { useContext } from 'react';
 import CartProduct from './CartProduct';
-import { MainButton } from '@vkruglikov/react-telegram-web-app';
+import { MainButton, MainButtonProps } from '@vkruglikov/react-telegram-web-app';
 import { getProductData, setDiscount } from '../products'
 import "../App.css"
 // import {Summary} from "./Summary"
@@ -68,14 +68,16 @@ function TgButton () {
         alert("Извините, такого промокода не существует");
     };
 
+    function changeLoad(t) {
+        console.log("TTTT:", t)
+    }
+
     function get_invoice(discountPercent, promoCode) {
         let initDataHash = localStorage.getItem('initDataHash')
         let dataCheckString = localStorage.getItem('dataCheckString')
         let PRICES = []
 
-        window.Telegram.WebApp.MainButton.setParams({
-          is_progress_visible: true,
-        });
+       
 
         
 
@@ -146,7 +148,7 @@ function TgButton () {
         <>
         {show === true && productCounts > 0?
             <>
-            <MainButton color="#FF790D" textColor="#232323" text={`Оформить покупку на ${total}₽`} onClick={()=> get_invoice(discountPercent, promoCode)}></MainButton>
+            <MainButton color="#FF790D" textColor="#232323" text={`Оформить покупку на ${total}₽`} onClick={()=> {get_invoice(discountPercent, promoCode); changeLoad(this); }}></MainButton>
             </>
         :
         <MainButton color="#FF790D" textColor="#232323" text={`Перейти в корзину (${productCounts})`} onClick={handleShow}></MainButton>
