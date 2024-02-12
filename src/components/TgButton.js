@@ -102,6 +102,7 @@ function TgButton () {
           })
           .then(function (response) {
             window.Telegram.WebApp.openInvoice(response.data);
+            window.Telegram.WebApp.MainButton.hideProgress();
           });    
         
         
