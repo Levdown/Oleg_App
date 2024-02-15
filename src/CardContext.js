@@ -9,6 +9,7 @@ export const CartContext = createContext({
     deleteFromCart: () => {},
     getTotalCost: () => {},
     setCartDiscount: () => {},
+    removeAll: () => {},
 });
 
 export function CartPovider({children}){
@@ -80,6 +81,10 @@ export function CartPovider({children}){
         }
     }
 
+    function removeAll() {
+        cartProducts.splice(0, cartProducts.length)
+    }
+
     function getTotalCost() {
         let totalCost = 0;
         cartProducts.map((cartItem) => {
@@ -129,6 +134,7 @@ export function CartPovider({children}){
         deleteFromCart,
         getTotalCost,
         setCartDiscount,
+        removeAll,
     }
 
     return (

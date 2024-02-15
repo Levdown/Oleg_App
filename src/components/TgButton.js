@@ -128,7 +128,9 @@ function TgButton () {
                   })
                   .then(function (response) {
                     console.log("close window web app")
-                    window.Telegram.WebApp.close();
+                    // window.Telegram.WebApp.close();
+                    cart.removeAll();
+                    handleClose();
                   });  
                 
                 }
