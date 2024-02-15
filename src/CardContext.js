@@ -82,7 +82,9 @@ export function CartPovider({children}){
     }
 
     function removeAll() {
-        cartProducts.splice(0, cartProducts.length)
+        cartProducts.map((cartItem) => {        
+            removeOneFromCart(cartItem.id)
+        });        
     }
 
     function getTotalCost() {
